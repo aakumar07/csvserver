@@ -3,7 +3,7 @@
 # Defing thr index arrgements
 
 if [ "$#" -ne 2 ]; then
-    echo "given value in between the range <start_index> <end_index>"
+    echo "Usage: ./gencsv.sh <start_index> <end_index>"
     exit 1
 fi
 
