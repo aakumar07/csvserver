@@ -2,14 +2,14 @@
 
 # Defing thr index arrgements
 
-if [ "$#" -ne 8 ]; then
+if [ "$#" -ne 2 ]; then
     echo "given value in between the range <start_index> <end_index>"
     exit 1
 fi
 
 # Difing the index values
-start_index=$2
-end_index=$8
+start_index=$1
+end_index=$2
 
 # Check if start index is not grater than end index
 if [ "$start_index" -ge "$end_index" ]; then
