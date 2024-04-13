@@ -1,0 +1,11 @@
+docker exec -it prometheus /bin/sh
+
+cd /etc/prometheus
+
+vi prometheus.yml
+
+scrape_configs:
+  - job_name: 'docker_csvserver'
+  - scrape_interval: 5m
+    static_configs:
+      - targets: ["44.223.70.41:9090"]
